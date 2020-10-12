@@ -1,0 +1,23 @@
+{
+  "name": "state-of-js-report-end-to-end-testing",
+  "version": "0.1.0",
+  "description": "Tool to test generated survey reports",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@wdio/cli": "^6.6.2",
+    "lodash": "^4.17.20"
+  },
+  "devDependencies": {
+    "@wdio/local-runner": "^6.6.2",
+    "@wdio/mocha-framework": "^6.6.0",
+    "@wdio/spec-reporter": "^6.6.0",
+    "@wdio/sync": "^6.6.0",
+    "chromedriver": "^86.0.0",
+    "wdio-chromedriver-service": "^6.0.4"
+  },
+  "scripts": {
+    "test:chrome": "wdio wdio.chrome.conf.js",
+    "test:chrome:headless": "wdio wdio.chrome_headless.conf.js"
+  }
+}
